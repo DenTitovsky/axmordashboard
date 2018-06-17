@@ -1,0 +1,66 @@
+﻿<html>
+<head>
+	<title>AXMOR dashboard</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="style/container.css" rel="stylesheet">
+    <link href="style/manager.css" rel="stylesheet">
+    <link href="style/widget.css" rel="stylesheet">
+    <link href="style/paging.css" rel="stylesheet">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/axdb-control.js"></script>
+	<script type="text/javascript" src="script/axdb-widget.js"></script>
+	<script type="text/javascript" src="script/axdb-widget-manager.js"></script>
+	<script type="text/javascript">
+	
+		var cityCodes = [
+			{
+			    "id": 519188,
+			    "name": "Novinki"
+			},
+			{
+			    "id": 473537,
+			    "name": "Vinogradovo"
+			},
+			{
+			    "id": 569143,
+			    "name": "Cherkizovo"
+			},
+			{
+			    "id": 803611,
+			    "name": "Yurevichi"
+			},
+			{
+			    "id": 2051302,
+			    "name": "Priiskovyy"
+			},
+			{
+			    "id": 476350,
+			    "name": "Vavibet"
+			},
+    	    {
+    	        "id": 1496747,
+    	        "name": "Novosibirsk"
+    	    },
+	        {
+	            "id": 1489423,
+	            "name": "Tomskaya"
+	        },
+	        {
+	            "id": 1496153,
+	            "name": "Omsk"
+	        }
+		];
+		var axdbControl = null;
+
+		$(document).ready(function(){
+		    axdbControl = new axdbControlClass();
+		    axdbControl.init($('#ax-weather'), cityCodes);
+		});
+	
+	</script>
+</head>
+<body>
+    <div id="ax-weather"></div>
+</body>
+</html>

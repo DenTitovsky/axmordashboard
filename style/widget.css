@@ -1,0 +1,53 @@
+﻿	.axdb-widget {
+		width: 200px;
+		height: 122px;
+		position: relative;
+		float: left;
+		display: block;
+		background-color: aliceblue;
+		margin: 5px 5px 0px 0px;
+            	font-family: Arial;
+            	font-size: 10px;
+	}
+	.axdb-widget table {
+            width: 200px;
+            border-width: 0px;
+	}
+        .axdb-widget-geography {
+            cursor: pointer;
+            font-weight: bold;
+        }
+	.axdb-widget-close-cell {
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+	}
+	.axdb-widget-weather-image{
+            width: 70px;
+            height: 50px;
+	}
+	.axdb-widget-weather-temperature{
+            width: 120px;
+            font-size: 25px;
+            font-weight: bold;
+	}
+        .axdb-widget-wind{
+            font-size: 13px;
+            font-style: italic;
+	}
+	.axdb-widget-preasure{
+            font-size: 13px;
+            font-style: italic;
+	}
+        .axdb-widget-loading {
+            background-image: url('../images/ajax-loader.gif');
+            background-repeat: no-repeat;
+        }
+	.axdb-widget-dragging{
+            width: 200px; height: 122px; position: absolute; float: left; display: block;
+            background-color: gray;
+            z-index: 5000;
+            opacity: .3; /* css standard */
+            filter: alpha(opacity=30); /* IE patch */
+            cursor: pointer;
+	}
